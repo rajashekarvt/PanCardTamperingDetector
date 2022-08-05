@@ -3,7 +3,7 @@ import streamlit as st
 import cv2
 from PIL import Image
 import requests
-import numpy as np
+
 from skimage.metrics import structural_similarity
 import os
 import pathlib
@@ -23,7 +23,7 @@ def tampering_detector(input_image):
         "images/tamp.png")
     st.image(tamp_image)
     tampered_image = cv2.imread(
-        "images/tamp.png")
+        "   images/tamp.png")
 
     original_gray = cv2.cvtColor(original_image, cv2.COLOR_BGR2GRAY)
     tampered_gray = cv2.cvtColor(tampered_image, cv2.COLOR_BGR2GRAY)
