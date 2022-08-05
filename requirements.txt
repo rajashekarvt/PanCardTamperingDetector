@@ -6,3 +6,4 @@ scikit-image
 gunicorn
 streamlit
 networkx
+streamlit.cli
